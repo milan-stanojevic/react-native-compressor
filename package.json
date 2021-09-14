@@ -47,7 +47,7 @@
     "react-native-compressor",
     "compress-audio"
   ],
-  "repository": "https://github.com/Shobbak/react-native-compressor",
+  "repository": "https://github.com/milan-stanojevic/react-native-compressor",
   "author": "shobbak <github@onshobbak.com> (https://github.com/Shobbak)",
   "license": "MIT",
   "bugs": {
@@ -108,7 +108,7 @@
       "tagName": "v${version}"
     },
     "npm": {
-      "publish": true
+      "publish": false
     },
     "github": {
       "release": true
