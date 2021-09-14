@@ -16,7 +16,7 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.reactnativecompressor.Video.VideoCompressorHelper;
 import com.zolad.videoslimmer.VideoSlimmer;
-
+import android.util.Log;
 import java.io.File;
 
 import static com.reactnativecompressor.Utils.Utils.generateCacheFilePath;
@@ -42,7 +42,8 @@ public class AutoVideoCompression {
       int actualWidth = Integer.parseInt(metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH));
       int bitrate = Integer.parseInt(metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_BITRATE));
       int orientation = Integer.parseInt(metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_ROTATION));
-      
+      Log.i("Test", "Rotation = " + orientation);
+
       if (orientation == 90){
         int tmp = actualWidth;
         actualWidth = actualHeight;
